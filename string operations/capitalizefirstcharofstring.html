@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First char of string to uppercase</title>
+</head>
+<body>
+    <script>
+        var a = "string";
+        document.writeln(a.charAt(0).toUpperCase()+"<br>");
+        document.writeln(a.slice(1, a.length)+"<br>");//or we can use a.substring(1,a.length);
+        var str="abcaa";
+        let count=0;
+        for(let i=0;i<str.length;i++){
+            if(str.charAt(i)=='a'){
+                count=count+1;
+            }
+            else{
+                i++;
+            }
+        }
+        document.writeln("count of a is ",count+"<br>");
+    </script>
+</body>
+</html>

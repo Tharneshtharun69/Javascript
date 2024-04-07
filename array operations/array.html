@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>arrays</title>
+    </head>
+    <body>
+        <script>
+            let names=[];
+            console.log(names);
+            //1)Accessing Elements of an Array
+            let courses=["html","css","js"];
+            console.log(courses);//prints all the elements of courses
+            //2)Accessing the First Element of an Array
+            console.log(courses[0]);//prints first element of courses
+            let arr=new Array(3);//declares a new array named arr
+            arr[0]=1;//inserts 1 at 0th position
+            arr[1]=2;//inserts 2 at 1st position
+            arr[2]=3;//inserts 3 at 2nd position
+            console.log(arr);//prints the array arr
+            //3)Accessing the Last Element of an Array
+            console.log(arr[arr.length-1]);//access last element in an array
+            //4)Modifying the Array Elements
+            courses[0]=["python"];
+            console.log(courses);
+            //5)adding elements to array
+            courses.push("Node js");
+            courses.unshift("angular js");
+            console.log(courses);
+            //6)add elements at the beginning of the array
+            courses.unshift("react js");
+            console.log(courses);
+            //7)remove and returns last element from an array
+            courses.pop(courses);
+            console.log(courses);
+            //8)removes 2 elements starting from index 1
+            courses.splice(1,2);
+            console.log(courses);
+            //9)array length
+            console.log(courses.length);
+            //10)Increase and decrease the length of an array
+            // Creating an Array and Initializing with Values
+            let courses5 = ["HTML", "CSS", "Javascript", "React", "Node.js"];
+            // Increase the array length to 7
+            courses5.length = 7;            
+            console.log("Array After Increase the Length: ", courses5);
+            // Decrease the array length to 2
+            courses.length = 2;
+            console.log("Array After Decrease the Length: ", courses)
+            //creating and iterating through array elements
+            let a=["html","css","js"]
+            for(let i=0;i<a.length;i++)
+            {
+                console.log(a[i]);
+            }
+            //length of an array
+            console.log(a.length);
+            //example of Array.forEach() loop.
+            let courses1=["html","css","js","node","angular"];
+            courses1.forEach(function myfunc(elements){
+                console.log(elements);
+            });
+            //concatenate two array
+            let courses2=["react"];
+            console.log("concatenated array:",courses1.concat(courses2));
+            //array to string
+            let courses3=["node","react","angular"];
+            console.log(courses.toString());
+            //type of array
+            let courses4=["node"];
+            console.log(typeof courses4);
+            //check whether it is array or not
+            console.log(Array.isArray(courses));
+            //instance of
+            console.log(courses instanceof Array);
+            let arr5=Array.from("GEEKS FOR GEEKS");
+            console.log(arr5);
+            console.log(arr5.length);
+        </script>
+    </body>
+</html>
