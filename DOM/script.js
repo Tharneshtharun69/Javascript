@@ -13,4 +13,5 @@ function changetext(){
 }
 function reset(){
   document.body.style.backgroundColor="white";
+  a.textContent="";
 }
